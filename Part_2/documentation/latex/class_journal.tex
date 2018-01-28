@@ -1,0 +1,170 @@
+\hypertarget{class_journal}{}\section{Journal Class Reference}
+\label{class_journal}\index{Journal@{Journal}}
+
+
+Class \hyperlink{class_journal}{Journal} -\/ creates the object \hyperlink{class_journal}{Journal} -\/ type of \hyperlink{class_publication}{Publication}.  
+
+
+
+
+{\ttfamily \#include $<$Journal.\+h$>$}
+
+Inheritance diagram for Journal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_journal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_journal_aece55c5ddbc4e548d7183731a527dca3}{Journal} (int id, std\+::string desc, std\+::string col, int vol, int n, int y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_journal}{Journal} Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_journal_a7131809f3865fbdcbba5f38996d29c7a}{show} ()
+\begin{DoxyCompactList}\small\item\em Displays the information of the journal (his parameters) \end{DoxyCompactList}\item 
+int \hyperlink{class_journal_af853578ebebf1297419889c2f1b5cfc9}{get\+Volume} () const
+\begin{DoxyCompactList}\small\item\em Gets the volume of the journal. \end{DoxyCompactList}\item 
+int \hyperlink{class_journal_ae2ee9253549e4748814119dd8ad01d2c}{get\+Number} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of the journal. \end{DoxyCompactList}\item 
+int \hyperlink{class_journal_a9db201ef096712da288a3f3df0d86125}{get\+Year} () const
+\begin{DoxyCompactList}\small\item\em Gets the year of the journal. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_journal_a631e4fa39c9875db342ed8eb1a9f5eb6}{get\+Out\+Put} (int type)
+\begin{DoxyCompactList}\small\item\em Gets the output to right in the file. \end{DoxyCompactList}\item 
+int \hyperlink{class_journal_ad787716ffbd1d22623245cf98c13ac4a}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Gets the type of the \hyperlink{class_journal}{Journal}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_journal}{Journal} -\/ creates the object \hyperlink{class_journal}{Journal} -\/ type of \hyperlink{class_publication}{Publication}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_journal_aece55c5ddbc4e548d7183731a527dca3}\label{class_journal_aece55c5ddbc4e548d7183731a527dca3}} 
+\index{Journal@{Journal}!Journal@{Journal}}
+\index{Journal@{Journal}!Journal@{Journal}}
+\subsubsection{\texorpdfstring{Journal()}{Journal()}}
+{\footnotesize\ttfamily Journal\+::\+Journal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::string}]{desc,  }\item[{std\+::string}]{col,  }\item[{int}]{vol,  }\item[{int}]{n,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_journal}{Journal} Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & unique way to identify all the journals \\
+\hline
+{\em desc} & description of the journal \\
+\hline
+{\em col} & collecting of the journal \\
+\hline
+{\em vol} & volume \\
+\hline
+{\em n} & number \\
+\hline
+{\em y} & year when the journal was published \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_journal_ae2ee9253549e4748814119dd8ad01d2c}\label{class_journal_ae2ee9253549e4748814119dd8ad01d2c}} 
+\index{Journal@{Journal}!get\+Number@{get\+Number}}
+\index{get\+Number@{get\+Number}!Journal@{Journal}}
+\subsubsection{\texorpdfstring{get\+Number()}{getNumber()}}
+{\footnotesize\ttfamily int Journal\+::get\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of the journal. 
+
+\begin{DoxyReturn}{Returns}
+Respective number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_journal_a631e4fa39c9875db342ed8eb1a9f5eb6}\label{class_journal_a631e4fa39c9875db342ed8eb1a9f5eb6}} 
+\index{Journal@{Journal}!get\+Out\+Put@{get\+Out\+Put}}
+\index{get\+Out\+Put@{get\+Out\+Put}!Journal@{Journal}}
+\subsubsection{\texorpdfstring{get\+Out\+Put()}{getOutPut()}}
+{\footnotesize\ttfamily string Journal\+::get\+Out\+Put (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the output to right in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & integer type of the publication, 0 if \hyperlink{class_book}{Book} and 1 if \hyperlink{class_journal}{Journal}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string to be written into the file 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_publication_af382f9557807e8375478ceb7890e841f}{Publication}.
+
+\mbox{\Hypertarget{class_journal_ad787716ffbd1d22623245cf98c13ac4a}\label{class_journal_ad787716ffbd1d22623245cf98c13ac4a}} 
+\index{Journal@{Journal}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Journal@{Journal}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily int Journal\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the \hyperlink{class_journal}{Journal}. 
+
+\begin{DoxyReturn}{Returns}
+type of the \hyperlink{class_publication}{Publication} (\hyperlink{class_book}{Book} or \hyperlink{class_journal}{Journal}) 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_publication_ab0bd9119b29b09fbbe9044016a512407}{Publication}.
+
+\mbox{\Hypertarget{class_journal_af853578ebebf1297419889c2f1b5cfc9}\label{class_journal_af853578ebebf1297419889c2f1b5cfc9}} 
+\index{Journal@{Journal}!get\+Volume@{get\+Volume}}
+\index{get\+Volume@{get\+Volume}!Journal@{Journal}}
+\subsubsection{\texorpdfstring{get\+Volume()}{getVolume()}}
+{\footnotesize\ttfamily int Journal\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the volume of the journal. 
+
+\begin{DoxyReturn}{Returns}
+Respective volume 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_journal_a9db201ef096712da288a3f3df0d86125}\label{class_journal_a9db201ef096712da288a3f3df0d86125}} 
+\index{Journal@{Journal}!get\+Year@{get\+Year}}
+\index{get\+Year@{get\+Year}!Journal@{Journal}}
+\subsubsection{\texorpdfstring{get\+Year()}{getYear()}}
+{\footnotesize\ttfamily int Journal\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the year of the journal. 
+
+\begin{DoxyReturn}{Returns}
+Respective year 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_journal_a7131809f3865fbdcbba5f38996d29c7a}\label{class_journal_a7131809f3865fbdcbba5f38996d29c7a}} 
+\index{Journal@{Journal}!show@{show}}
+\index{show@{show}!Journal@{Journal}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Journal\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the information of the journal (his parameters) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_publication_aa4240a04fcecd6257e0d1a33e8f18ff0}{Publication}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+F\+E\+U\+P/\+M\+I\+E\+I\+C/2º ano/\+A\+E\+D\+A/\+Projeto\+\_\+\+Eclipse/as/src/Journal.\+h\item 
+D\+:/\+F\+E\+U\+P/\+M\+I\+E\+I\+C/2º ano/\+A\+E\+D\+A/\+Projeto\+\_\+\+Eclipse/as/src/Journal.\+cpp\end{DoxyCompactItemize}

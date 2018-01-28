@@ -1,0 +1,197 @@
+\hypertarget{class_publication}{}\section{Publication Class Reference}
+\label{class_publication}\index{Publication@{Publication}}
+
+
+Class \hyperlink{class_publication}{Publication}, abstract, Class parent of \hyperlink{class_book}{Book} and \hyperlink{class_journal}{Journal}.  
+
+
+
+
+{\ttfamily \#include $<$Publication.\+h$>$}
+
+Inheritance diagram for Publication\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_publication}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_publication_ab271fddf4b63d13af271f47979e9c4a7}{Publication} (int id, std\+::string desc, std\+::string col)
+\begin{DoxyCompactList}\small\item\em Default constructor of the publication. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_publication_aa4240a04fcecd6257e0d1a33e8f18ff0}{show} ()
+\begin{DoxyCompactList}\small\item\em Displays the information of the \hyperlink{class_publication}{Publication}. \end{DoxyCompactList}\item 
+int \hyperlink{class_publication_ab1b5251a7e94efcb7792edbac4ff93bc}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID of \hyperlink{class_publication}{Publication}. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_publication_a5cc83441c3e2dd8daaa050a18b2e6bdd}{get\+Descripiton} () const
+\begin{DoxyCompactList}\small\item\em Gets the description of the \hyperlink{class_publication}{Publication}. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_publication_ae1005ffcb387e2c1cd79483fdbb545c8}{get\+Colection} () const
+\begin{DoxyCompactList}\small\item\em Gets the collection of the \hyperlink{class_publication}{Publication}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_publication_a60f079ac47aa4b8aa94957e15f12a2da}{operator==} (const \hyperlink{class_publication}{Publication} \&p2) const
+\begin{DoxyCompactList}\small\item\em operator == for the publication \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_publication_ab0bd9119b29b09fbbe9044016a512407}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Get the type of the publication 0 if \hyperlink{class_book}{Book} or 1 if \hyperlink{class_journal}{Journal}. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{class_publication_af382f9557807e8375478ceb7890e841f}{get\+Out\+Put} (int type)
+\begin{DoxyCompactList}\small\item\em Gets the output to right in the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_publication_a5bb18d963c10a67fcc6da7b895a3474a}\label{class_publication_a5bb18d963c10a67fcc6da7b895a3474a}} 
+int \hyperlink{class_publication_a5bb18d963c10a67fcc6da7b895a3474a}{ID}
+\begin{DoxyCompactList}\small\item\em ID of the publication (book or journal) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_publication_abfcf695658989bad9371a7896213f9a6}\label{class_publication_abfcf695658989bad9371a7896213f9a6}} 
+std\+::string \hyperlink{class_publication_abfcf695658989bad9371a7896213f9a6}{description}
+\begin{DoxyCompactList}\small\item\em description of the publication \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_publication_a644dc37a95f7da3bc8b83ca601383368}\label{class_publication_a644dc37a95f7da3bc8b83ca601383368}} 
+std\+::string \hyperlink{class_publication_a644dc37a95f7da3bc8b83ca601383368}{colection}
+\begin{DoxyCompactList}\small\item\em collection of the publication \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_publication}{Publication}, abstract, Class parent of \hyperlink{class_book}{Book} and \hyperlink{class_journal}{Journal}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_publication_ab271fddf4b63d13af271f47979e9c4a7}\label{class_publication_ab271fddf4b63d13af271f47979e9c4a7}} 
+\index{Publication@{Publication}!Publication@{Publication}}
+\index{Publication@{Publication}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{Publication()}{Publication()}}
+{\footnotesize\ttfamily Publication\+::\+Publication (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::string}]{desc,  }\item[{std\+::string}]{col }\end{DoxyParamCaption})}
+
+
+
+Default constructor of the publication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & unique way to identify the publication \\
+\hline
+{\em desc} & description of the publication \\
+\hline
+{\em col} & collecting of the publication \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_publication_ae1005ffcb387e2c1cd79483fdbb545c8}\label{class_publication_ae1005ffcb387e2c1cd79483fdbb545c8}} 
+\index{Publication@{Publication}!get\+Colection@{get\+Colection}}
+\index{get\+Colection@{get\+Colection}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{get\+Colection()}{getColection()}}
+{\footnotesize\ttfamily string Publication\+::get\+Colection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the collection of the \hyperlink{class_publication}{Publication}. 
+
+\begin{DoxyReturn}{Returns}
+Collection of the \hyperlink{class_publication}{Publication} in a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_publication_a5cc83441c3e2dd8daaa050a18b2e6bdd}\label{class_publication_a5cc83441c3e2dd8daaa050a18b2e6bdd}} 
+\index{Publication@{Publication}!get\+Descripiton@{get\+Descripiton}}
+\index{get\+Descripiton@{get\+Descripiton}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{get\+Descripiton()}{getDescripiton()}}
+{\footnotesize\ttfamily string Publication\+::get\+Descripiton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the description of the \hyperlink{class_publication}{Publication}. 
+
+\begin{DoxyReturn}{Returns}
+Description of the \hyperlink{class_publication}{Publication} in a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_publication_ab1b5251a7e94efcb7792edbac4ff93bc}\label{class_publication_ab1b5251a7e94efcb7792edbac4ff93bc}} 
+\index{Publication@{Publication}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int Publication\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID of \hyperlink{class_publication}{Publication}. 
+
+\begin{DoxyReturn}{Returns}
+Respective ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_publication_af382f9557807e8375478ceb7890e841f}\label{class_publication_af382f9557807e8375478ceb7890e841f}} 
+\index{Publication@{Publication}!get\+Out\+Put@{get\+Out\+Put}}
+\index{get\+Out\+Put@{get\+Out\+Put}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{get\+Out\+Put()}{getOutPut()}}
+{\footnotesize\ttfamily string Publication\+::get\+Out\+Put (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the output to right in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & is the integer type of the publication, 0 if \hyperlink{class_book}{Book} and 1 if \hyperlink{class_journal}{Journal}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string to write to the file 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_journal_a631e4fa39c9875db342ed8eb1a9f5eb6}{Journal}, and \hyperlink{class_book_ab72570b8b4d902d6f3fe681dc29b2198}{Book}.
+
+\mbox{\Hypertarget{class_publication_ab0bd9119b29b09fbbe9044016a512407}\label{class_publication_ab0bd9119b29b09fbbe9044016a512407}} 
+\index{Publication@{Publication}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual int Publication\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the type of the publication 0 if \hyperlink{class_book}{Book} or 1 if \hyperlink{class_journal}{Journal}. 
+
+\begin{DoxyReturn}{Returns}
+type (integer) 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_journal_ad787716ffbd1d22623245cf98c13ac4a}{Journal}, and \hyperlink{class_book_a285dd3654bfced6baffd86320c39d42e}{Book}.
+
+\mbox{\Hypertarget{class_publication_a60f079ac47aa4b8aa94957e15f12a2da}\label{class_publication_a60f079ac47aa4b8aa94957e15f12a2da}} 
+\index{Publication@{Publication}!operator==@{operator==}}
+\index{operator==@{operator==}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Publication\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_publication}{Publication} \&}]{p2 }\end{DoxyParamCaption}) const}
+
+
+
+operator == for the publication 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & \hyperlink{class_publication}{Publication} p2 to the compared\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the Publications are equal and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_publication_aa4240a04fcecd6257e0d1a33e8f18ff0}\label{class_publication_aa4240a04fcecd6257e0d1a33e8f18ff0}} 
+\index{Publication@{Publication}!show@{show}}
+\index{show@{show}!Publication@{Publication}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Publication\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the information of the \hyperlink{class_publication}{Publication}. 
+
+because publications is an abstract class and the \hyperlink{class_publication_aa4240a04fcecd6257e0d1a33e8f18ff0}{show()} function is initialized in book and journal classes
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_journal_a7131809f3865fbdcbba5f38996d29c7a}{Journal}, and \hyperlink{class_book_a8368f243d8a645444e8019760a50cc8b}{Book}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Publication.\+h\item 
+Publication.\+cpp\end{DoxyCompactItemize}

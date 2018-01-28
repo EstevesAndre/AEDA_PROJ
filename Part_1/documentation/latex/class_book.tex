@@ -1,0 +1,119 @@
+\hypertarget{class_book}{}\section{Book Class Reference}
+\label{class_book}\index{Book@{Book}}
+
+
+Class \hyperlink{class_book}{Book} -\/ creates the object \hyperlink{class_book}{Book} -\/ type of \hyperlink{class_publication}{Publication}.  
+
+
+
+
+{\ttfamily \#include $<$Book.\+h$>$}
+
+Inheritance diagram for Book\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_book}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_book_a45ca53a239ae4614d7cc687a07a5c96e}{Book} (int id, std\+::string desc, std\+::string col)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_book}{Book} Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_book_a8368f243d8a645444e8019760a50cc8b}{show} ()
+\begin{DoxyCompactList}\small\item\em Displays the information of the book (his parameters) \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_book_ab72570b8b4d902d6f3fe681dc29b2198}{get\+Out\+Put} (int type)
+\begin{DoxyCompactList}\small\item\em Gets the output to be written to the file. \end{DoxyCompactList}\item 
+int \hyperlink{class_book_a285dd3654bfced6baffd86320c39d42e}{get\+Type} () const
+\begin{DoxyCompactList}\small\item\em Gets the type of the book. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_book}{Book} -\/ creates the object \hyperlink{class_book}{Book} -\/ type of \hyperlink{class_publication}{Publication}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_book_a45ca53a239ae4614d7cc687a07a5c96e}\label{class_book_a45ca53a239ae4614d7cc687a07a5c96e}} 
+\index{Book@{Book}!Book@{Book}}
+\index{Book@{Book}!Book@{Book}}
+\subsubsection{\texorpdfstring{Book()}{Book()}}
+{\footnotesize\ttfamily Book\+::\+Book (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::string}]{desc,  }\item[{std\+::string}]{col }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_book}{Book} Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & unique way to identify all the books \\
+\hline
+{\em desc} & description of the book \\
+\hline
+{\em col} & collecting of the book \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_book_ab72570b8b4d902d6f3fe681dc29b2198}\label{class_book_ab72570b8b4d902d6f3fe681dc29b2198}} 
+\index{Book@{Book}!get\+Out\+Put@{get\+Out\+Put}}
+\index{get\+Out\+Put@{get\+Out\+Put}!Book@{Book}}
+\subsubsection{\texorpdfstring{get\+Out\+Put()}{getOutPut()}}
+{\footnotesize\ttfamily string Book\+::get\+Out\+Put (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the output to be written to the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & of the publication as an int value, 0 if book and 1 if journal\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string to write to the file 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_publication_af382f9557807e8375478ceb7890e841f}{Publication}.
+
+\mbox{\Hypertarget{class_book_a285dd3654bfced6baffd86320c39d42e}\label{class_book_a285dd3654bfced6baffd86320c39d42e}} 
+\index{Book@{Book}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Book@{Book}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily int Book\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the book. 
+
+\begin{DoxyReturn}{Returns}
+int value which is the type of the publication, 0 if book and 1 if journal 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_publication_ab0bd9119b29b09fbbe9044016a512407}{Publication}.
+
+\mbox{\Hypertarget{class_book_a8368f243d8a645444e8019760a50cc8b}\label{class_book_a8368f243d8a645444e8019760a50cc8b}} 
+\index{Book@{Book}!show@{show}}
+\index{show@{show}!Book@{Book}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Book\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the information of the book (his parameters) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_publication_aa4240a04fcecd6257e0d1a33e8f18ff0}{Publication}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Book.\+h\item 
+Book.\+cpp\end{DoxyCompactItemize}

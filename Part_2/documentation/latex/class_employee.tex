@@ -1,0 +1,208 @@
+\hypertarget{class_employee}{}\section{Employee Class Reference}
+\label{class_employee}\index{Employee@{Employee}}
+
+
+Class \hyperlink{class_employee}{Employee} that creates an object (\hyperlink{class_employee}{Employee})  
+
+
+
+
+{\ttfamily \#include $<$Employee.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_employee_a157c273346ec4911ee412f9e21e0f4a0}{Employee} (int ID, std\+::string name, unsigned int y, unsigned int m, unsigned int d)
+\begin{DoxyCompactList}\small\item\em Default constructor of the class \hyperlink{class_employee}{Employee}. \end{DoxyCompactList}\item 
+void \hyperlink{class_employee_a86d659298b3c8e66e2529a45ddae211b}{show} ()
+\begin{DoxyCompactList}\small\item\em Displays the information of the \hyperlink{class_employee}{Employee} (his parameters) \end{DoxyCompactList}\item 
+int \hyperlink{class_employee_abf982538674744cb2f42ad68278d2260}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID of the employee. \end{DoxyCompactList}\item 
+int \hyperlink{class_employee_a0a67622c70099242fb6742b860ff4db8}{get\+I\+D\+\_\+store} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID of the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+void \hyperlink{class_employee_a4c91952e1fd65e9704fd13efc220f4d3}{set\+I\+D\+\_\+store} (int val)
+\begin{DoxyCompactList}\small\item\em Sets the ID of the store. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_employee_a8e7c3870f6b4b08a5c7ccccd32ca8f37}{get\+Name} () const
+\begin{DoxyCompactList}\small\item\em Gets the name of the employee. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_employee_a1487bf0371ff0bc8c8dfab7b9f1fb321}{get\+Date} () const
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_date}{Date} of birth of the employee. \end{DoxyCompactList}\item 
+\hyperlink{class_store}{Store} $\ast$ \hyperlink{class_employee_a3e8bde65dfb53565695b15f38cc13988}{get\+Workplace} () const
+\begin{DoxyCompactList}\small\item\em Gets the Workplace(\+Class store) \end{DoxyCompactList}\item 
+void \hyperlink{class_employee_a6c6abc2e287daa04a3135d44f728239c}{set\+Workplace} (\hyperlink{class_store}{Store} $\ast$st)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_store}{Store(class)} to the employee. \end{DoxyCompactList}\item 
+bool \hyperlink{class_employee_a522fb41eef0ffb9be36504ce2df9ddb2}{operator==} (\hyperlink{class_employee}{Employee} \&e2) const
+\begin{DoxyCompactList}\small\item\em Operator == for the employee. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_employee}{Employee} that creates an object (\hyperlink{class_employee}{Employee}) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_employee_a157c273346ec4911ee412f9e21e0f4a0}\label{class_employee_a157c273346ec4911ee412f9e21e0f4a0}} 
+\index{Employee@{Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily Employee\+::\+Employee (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{std\+::string}]{name,  }\item[{unsigned int}]{y,  }\item[{unsigned int}]{m,  }\item[{unsigned int}]{d }\end{DoxyParamCaption})}
+
+
+
+Default constructor of the class \hyperlink{class_employee}{Employee}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & unique way to identify each employee \\
+\hline
+{\em name} & name of the employee \\
+\hline
+{\em y} & year of the birth \\
+\hline
+{\em m} & month of the birth \\
+\hline
+{\em d} & day of the birth \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_employee_a1487bf0371ff0bc8c8dfab7b9f1fb321}\label{class_employee_a1487bf0371ff0bc8c8dfab7b9f1fb321}} 
+\index{Employee@{Employee}!get\+Date@{get\+Date}}
+\index{get\+Date@{get\+Date}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{get\+Date()}{getDate()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Employee\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the \hyperlink{class_date}{Date} of birth of the employee. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_date}{Date(class)} of the employee\textquotesingle{}s birth 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_abf982538674744cb2f42ad68278d2260}\label{class_employee_abf982538674744cb2f42ad68278d2260}} 
+\index{Employee@{Employee}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int Employee\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID of the employee. 
+
+\begin{DoxyReturn}{Returns}
+Respective ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a0a67622c70099242fb6742b860ff4db8}\label{class_employee_a0a67622c70099242fb6742b860ff4db8}} 
+\index{Employee@{Employee}!get\+I\+D\+\_\+store@{get\+I\+D\+\_\+store}}
+\index{get\+I\+D\+\_\+store@{get\+I\+D\+\_\+store}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{get\+I\+D\+\_\+store()}{getID\_store()}}
+{\footnotesize\ttfamily int Employee\+::get\+I\+D\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID of the \hyperlink{class_store}{Store}. 
+
+\begin{DoxyReturn}{Returns}
+0 if there\textquotesingle{}s no store attributed to the employee 
+
+otherwise is there\textquotesingle{}s a store attributed to the employee 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a8e7c3870f6b4b08a5c7ccccd32ca8f37}\label{class_employee_a8e7c3870f6b4b08a5c7ccccd32ca8f37}} 
+\index{Employee@{Employee}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Employee\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the name of the employee. 
+
+\begin{DoxyReturn}{Returns}
+Respective string of the employee\textquotesingle{}s name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a3e8bde65dfb53565695b15f38cc13988}\label{class_employee_a3e8bde65dfb53565695b15f38cc13988}} 
+\index{Employee@{Employee}!get\+Workplace@{get\+Workplace}}
+\index{get\+Workplace@{get\+Workplace}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{get\+Workplace()}{getWorkplace()}}
+{\footnotesize\ttfamily \hyperlink{class_store}{Store} $\ast$ Employee\+::get\+Workplace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the Workplace(\+Class store) 
+
+\begin{DoxyReturn}{Returns}
+Respective \hyperlink{class_store}{Store} associated to this employee, N\+U\+LL if there\textquotesingle{}s no \hyperlink{class_store}{Store} attributed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a522fb41eef0ffb9be36504ce2df9ddb2}\label{class_employee_a522fb41eef0ffb9be36504ce2df9ddb2}} 
+\index{Employee@{Employee}!operator==@{operator==}}
+\index{operator==@{operator==}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Employee\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{class_employee}{Employee} \&}]{e2 }\end{DoxyParamCaption}) const}
+
+
+
+Operator == for the employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e2} & \hyperlink{class_employee}{Employee} e2 to the compared\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the Employees are equal and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a4c91952e1fd65e9704fd13efc220f4d3}\label{class_employee_a4c91952e1fd65e9704fd13efc220f4d3}} 
+\index{Employee@{Employee}!set\+I\+D\+\_\+store@{set\+I\+D\+\_\+store}}
+\index{set\+I\+D\+\_\+store@{set\+I\+D\+\_\+store}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{set\+I\+D\+\_\+store()}{setID\_store()}}
+{\footnotesize\ttfamily void Employee\+::set\+I\+D\+\_\+store (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets the ID of the store. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & ID to set the param I\+D\+\_\+store\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a6c6abc2e287daa04a3135d44f728239c}\label{class_employee_a6c6abc2e287daa04a3135d44f728239c}} 
+\index{Employee@{Employee}!set\+Workplace@{set\+Workplace}}
+\index{set\+Workplace@{set\+Workplace}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{set\+Workplace()}{setWorkplace()}}
+{\footnotesize\ttfamily void Employee\+::set\+Workplace (\begin{DoxyParamCaption}\item[{\hyperlink{class_store}{Store} $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{class_store}{Store(class)} to the employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & store to be set to the employee\\
+\hline
+\end{DoxyParams}
+Gives an exception if the the \hyperlink{class_store}{Store} doesn\textquotesingle{}t exists or if the \hyperlink{class_store}{Store} has already an employee associated
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_employee_a86d659298b3c8e66e2529a45ddae211b}\label{class_employee_a86d659298b3c8e66e2529a45ddae211b}} 
+\index{Employee@{Employee}!show@{show}}
+\index{show@{show}!Employee@{Employee}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Employee\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the information of the \hyperlink{class_employee}{Employee} (his parameters) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+F\+E\+U\+P/\+M\+I\+E\+I\+C/2º ano/\+A\+E\+D\+A/\+Projeto\+\_\+\+Eclipse/as/src/Employee.\+h\item 
+D\+:/\+F\+E\+U\+P/\+M\+I\+E\+I\+C/2º ano/\+A\+E\+D\+A/\+Projeto\+\_\+\+Eclipse/as/src/Employee.\+cpp\end{DoxyCompactItemize}

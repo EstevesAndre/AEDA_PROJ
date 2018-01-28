@@ -1,0 +1,198 @@
+\hypertarget{class_store___request}{}\section{Store\+\_\+\+Request Class Reference}
+\label{class_store___request}\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+
+
+Class \hyperlink{class_store___request}{Store\+\_\+\+Request} to save the requests of the stores to be completed by \hyperlink{class_headquarters}{Headquarters}.  
+
+
+
+
+{\ttfamily \#include $<$Store\+\_\+\+Request.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_store___request_a38aa663a0d31c17aad7629e61509df21}{Store\+\_\+\+Request} (int ID, int pub\+\_\+id, \hyperlink{class_date}{Date} d1, \hyperlink{class_date}{Date} d2, int q, float price, int s\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Default constructor of the \hyperlink{class_store___request}{Store\+\_\+\+Request}. \end{DoxyCompactList}\item 
+void \hyperlink{class_store___request_a1827180c3d971d1e6a4e6bfc85641019}{show} ()
+\begin{DoxyCompactList}\small\item\em Displays the information of the \hyperlink{class_store___request}{Store\+\_\+\+Request}. \end{DoxyCompactList}\item 
+int \hyperlink{class_store___request_aea346d2504acd89a30dd7aa79b633e0e}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID (identification) of the store request. \end{DoxyCompactList}\item 
+int \hyperlink{class_store___request_a50429baf56bd03b19c8d53d00e8af756}{get\+Publication\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the publication id. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_store___request_ad7e54515056bd56878bb933a4ccff2a2}{get\+Request\+Date} () const
+\begin{DoxyCompactList}\small\item\em Gets the request date of the store request. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_store___request_af659200be3b40797cc7f44b43febac85}{get\+Delivery\+Date} () const
+\begin{DoxyCompactList}\small\item\em Gets the delivery date of the store request. \end{DoxyCompactList}\item 
+int \hyperlink{class_store___request_aad810d40b6c8cfd55276cd069c2309f8}{get\+Quantity} () const
+\begin{DoxyCompactList}\small\item\em Gets the quantity of the request. \end{DoxyCompactList}\item 
+float \hyperlink{class_store___request_a93fc46718e228136422fd03dd36032aa}{get\+Unitary\+Price} () const
+\begin{DoxyCompactList}\small\item\em Gets the unit price of the publication (book or journal) \end{DoxyCompactList}\item 
+int \hyperlink{class_store___request_a5fb72da2677412686a919e705714a85d}{get\+Store\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_store}{Store} ID that did the request. \end{DoxyCompactList}\item 
+bool \hyperlink{class_store___request_acaf1134a64475cff2641234e32b0b263}{operator==} (\hyperlink{class_store___request}{Store\+\_\+\+Request} \&sr2) const
+\begin{DoxyCompactList}\small\item\em operator == for the \hyperlink{class_store___request}{Store\+\_\+\+Request} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_store___request}{Store\+\_\+\+Request} to save the requests of the stores to be completed by \hyperlink{class_headquarters}{Headquarters}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_store___request_a38aa663a0d31c17aad7629e61509df21}\label{class_store___request_a38aa663a0d31c17aad7629e61509df21}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{Store\+\_\+\+Request()}{Store\_Request()}}
+{\footnotesize\ttfamily Store\+\_\+\+Request\+::\+Store\+\_\+\+Request (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{pub\+\_\+id,  }\item[{\hyperlink{class_date}{Date}}]{d1,  }\item[{\hyperlink{class_date}{Date}}]{d2,  }\item[{int}]{q,  }\item[{float}]{price,  }\item[{int}]{s\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Default constructor of the \hyperlink{class_store___request}{Store\+\_\+\+Request}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & unique way to identify the different store requests \\
+\hline
+{\em pub\+\_\+id} & identification for the publication (book or journal) \\
+\hline
+{\em d1} & request \hyperlink{class_date}{Date} of the order \\
+\hline
+{\em d2} & limit delivery date of the request \\
+\hline
+{\em q} & quantity of the order \\
+\hline
+{\em price} & value of each publication(book or journal) \\
+\hline
+{\em s\+\_\+id} & store id that did the request \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_store___request_af659200be3b40797cc7f44b43febac85}\label{class_store___request_af659200be3b40797cc7f44b43febac85}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!get\+Delivery\+Date@{get\+Delivery\+Date}}
+\index{get\+Delivery\+Date@{get\+Delivery\+Date}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Delivery\+Date()}{getDeliveryDate()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Store\+\_\+\+Request\+::get\+Delivery\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the delivery date of the store request. 
+
+\begin{DoxyReturn}{Returns}
+Delivery date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_aea346d2504acd89a30dd7aa79b633e0e}\label{class_store___request_aea346d2504acd89a30dd7aa79b633e0e}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int Store\+\_\+\+Request\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID (identification) of the store request. 
+
+\begin{DoxyReturn}{Returns}
+Respective ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_a50429baf56bd03b19c8d53d00e8af756}\label{class_store___request_a50429baf56bd03b19c8d53d00e8af756}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!get\+Publication\+ID@{get\+Publication\+ID}}
+\index{get\+Publication\+ID@{get\+Publication\+ID}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Publication\+I\+D()}{getPublicationID()}}
+{\footnotesize\ttfamily int Store\+\_\+\+Request\+::get\+Publication\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the publication id. 
+
+\begin{DoxyReturn}{Returns}
+Respective id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_aad810d40b6c8cfd55276cd069c2309f8}\label{class_store___request_aad810d40b6c8cfd55276cd069c2309f8}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!get\+Quantity@{get\+Quantity}}
+\index{get\+Quantity@{get\+Quantity}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Quantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Store\+\_\+\+Request\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the quantity of the request. 
+
+\begin{DoxyReturn}{Returns}
+qnt param (quantity of the request) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_ad7e54515056bd56878bb933a4ccff2a2}\label{class_store___request_ad7e54515056bd56878bb933a4ccff2a2}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!get\+Request\+Date@{get\+Request\+Date}}
+\index{get\+Request\+Date@{get\+Request\+Date}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Request\+Date()}{getRequestDate()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Store\+\_\+\+Request\+::get\+Request\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the request date of the store request. 
+
+\begin{DoxyReturn}{Returns}
+Request date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_a5fb72da2677412686a919e705714a85d}\label{class_store___request_a5fb72da2677412686a919e705714a85d}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!get\+Store\+ID@{get\+Store\+ID}}
+\index{get\+Store\+ID@{get\+Store\+ID}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Store\+I\+D()}{getStoreID()}}
+{\footnotesize\ttfamily int Store\+\_\+\+Request\+::get\+Store\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the \hyperlink{class_store}{Store} ID that did the request. 
+
+\begin{DoxyReturn}{Returns}
+Respective store ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_a93fc46718e228136422fd03dd36032aa}\label{class_store___request_a93fc46718e228136422fd03dd36032aa}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!get\+Unitary\+Price@{get\+Unitary\+Price}}
+\index{get\+Unitary\+Price@{get\+Unitary\+Price}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Unitary\+Price()}{getUnitaryPrice()}}
+{\footnotesize\ttfamily float Store\+\_\+\+Request\+::get\+Unitary\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the unit price of the publication (book or journal) 
+
+\begin{DoxyReturn}{Returns}
+unit price of the request 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_acaf1134a64475cff2641234e32b0b263}\label{class_store___request_acaf1134a64475cff2641234e32b0b263}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!operator==@{operator==}}
+\index{operator==@{operator==}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Store\+\_\+\+Request\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{class_store___request}{Store\+\_\+\+Request} \&}]{sr2 }\end{DoxyParamCaption}) const}
+
+
+
+operator == for the \hyperlink{class_store___request}{Store\+\_\+\+Request} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sr2} & \hyperlink{class_store___request}{Store\+\_\+\+Request} sr2 to the compared\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the Store\+\_\+\+Requests are equal and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store___request_a1827180c3d971d1e6a4e6bfc85641019}\label{class_store___request_a1827180c3d971d1e6a4e6bfc85641019}} 
+\index{Store\+\_\+\+Request@{Store\+\_\+\+Request}!show@{show}}
+\index{show@{show}!Store\+\_\+\+Request@{Store\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Store\+\_\+\+Request\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the information of the \hyperlink{class_store___request}{Store\+\_\+\+Request}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Store\+\_\+\+Request.\+h\item 
+Store\+\_\+\+Request.\+cpp\end{DoxyCompactItemize}

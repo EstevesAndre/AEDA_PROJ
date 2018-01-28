@@ -1,0 +1,281 @@
+\hypertarget{class_store}{}\section{Store Class Reference}
+\label{class_store}\index{Store@{Store}}
+
+
+Class \hyperlink{class_store}{Store} -\/ creates an object \hyperlink{class_store}{Store}.  
+
+
+
+
+{\ttfamily \#include $<$Store.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_store_a7e67d8e31c81dd0ae4a8fa5a397a40df}{Store} (int id, std\+::string city, unsigned long pn)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_store_a7c3951daba9c6f0c3c432aea46cfd5b8}{show} ()
+\begin{DoxyCompactList}\small\item\em Displays the information of the \hyperlink{class_store}{Store} (his parameters) \end{DoxyCompactList}\item 
+int \hyperlink{class_store_aaaf0609bbd37babf36a4b9afb09709cf}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID of the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_store_a63032ec1afe4b301f55584a8018f478c}{get\+City} () const
+\begin{DoxyCompactList}\small\item\em Gets the City of the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+\hyperlink{class_employee}{Employee} \hyperlink{class_store_ab4b4d6e958e7d26398f3e6e0e932c920}{get\+Worker} () const
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_employee}{Employee} of the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_store_afbef10a37143ea91b200d50e8e6b83d7}{get\+Phone\+Number} () const
+\begin{DoxyCompactList}\small\item\em Gets the phone number of the store. \end{DoxyCompactList}\item 
+void \hyperlink{class_store_a5486a87318c219a4cc85438c9b171ffc}{set\+Worker} (\hyperlink{class_employee}{Employee} $\ast$worker)
+\begin{DoxyCompactList}\small\item\em Sets the worker of the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+int \hyperlink{class_store_a6b828ab56ffdcf4c8eb64e53ab998543}{get\+I\+D\+\_\+employee} () const
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_employee}{Employee} ID. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_publication}{Publication} $\ast$$>$ \hyperlink{class_store_a05e802d26ede5fc4225074d1c732b3f3}{get\+\_\+publications\+\_\+store} ()
+\begin{DoxyCompactList}\small\item\em Gets the vector of publications (books and journals) \end{DoxyCompactList}\item 
+void \hyperlink{class_store_a2d721f632d90947fae8c9eaa9f8abfcb}{set\+I\+D\+\_\+employee} (int val)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_employee}{Employee} ID. \end{DoxyCompactList}\item 
+void \hyperlink{class_store_aaea321fd77af274c34e8ade71ed02aa7}{add\+Publication} (\hyperlink{class_publication}{Publication} $\ast$publication, int stock\+\_\+min)
+\begin{DoxyCompactList}\small\item\em Add a \hyperlink{class_publication}{Publication} (\hyperlink{class_book}{Book} or \hyperlink{class_journal}{Journal}) to the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+void \hyperlink{class_store_a67bad0d70942ce8560926110297fdf33}{add\+Stock} (int publication\+\_\+id, int amount)
+\begin{DoxyCompactList}\small\item\em Add stock to the \hyperlink{class_publication}{Publication} (\hyperlink{class_book}{Book} or \hyperlink{class_journal}{Journal}) \end{DoxyCompactList}\item 
+void \hyperlink{class_store_a64f322bc111e0e88ab0995cd86718f0d}{remove\+Publication} (int id)
+\begin{DoxyCompactList}\small\item\em Removes a \hyperlink{class_publication}{Publication} of the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_store_a4dfd27a0615f161f2f0e94297bb54969}{operator==} (\hyperlink{class_store}{Store} \&s2) const
+\begin{DoxyCompactList}\small\item\em operator == for the \hyperlink{class_store}{Store} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_store}{Store} -\/ creates an object \hyperlink{class_store}{Store}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_store_a7e67d8e31c81dd0ae4a8fa5a397a40df}\label{class_store_a7e67d8e31c81dd0ae4a8fa5a397a40df}} 
+\index{Store@{Store}!Store@{Store}}
+\index{Store@{Store}!Store@{Store}}
+\subsubsection{\texorpdfstring{Store()}{Store()}}
+{\footnotesize\ttfamily Store\+::\+Store (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::string}]{city,  }\item[{unsigned long}]{pn }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & unique way to identify the different stores \\
+\hline
+{\em city} & place where the store is situated \\
+\hline
+{\em pn} & phone number of the store \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_store_aaea321fd77af274c34e8ade71ed02aa7}\label{class_store_aaea321fd77af274c34e8ade71ed02aa7}} 
+\index{Store@{Store}!add\+Publication@{add\+Publication}}
+\index{add\+Publication@{add\+Publication}!Store@{Store}}
+\subsubsection{\texorpdfstring{add\+Publication()}{addPublication()}}
+{\footnotesize\ttfamily void Store\+::add\+Publication (\begin{DoxyParamCaption}\item[{\hyperlink{class_publication}{Publication} $\ast$}]{publication,  }\item[{int}]{stock\+\_\+min }\end{DoxyParamCaption})}
+
+
+
+Add a \hyperlink{class_publication}{Publication} (\hyperlink{class_book}{Book} or \hyperlink{class_journal}{Journal}) to the \hyperlink{class_store}{Store}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em publication} & book or journal to be added \\
+\hline
+{\em stock\+\_\+min} & minimum stock of the publication, 0 if \hyperlink{class_book}{Book} and 1 if \hyperlink{class_journal}{Journal}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a67bad0d70942ce8560926110297fdf33}\label{class_store_a67bad0d70942ce8560926110297fdf33}} 
+\index{Store@{Store}!add\+Stock@{add\+Stock}}
+\index{add\+Stock@{add\+Stock}!Store@{Store}}
+\subsubsection{\texorpdfstring{add\+Stock()}{addStock()}}
+{\footnotesize\ttfamily void Store\+::add\+Stock (\begin{DoxyParamCaption}\item[{int}]{publication\+\_\+id,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Add stock to the \hyperlink{class_publication}{Publication} (\hyperlink{class_book}{Book} or \hyperlink{class_journal}{Journal}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em publication\+\_\+id} & ID of the publication (book or journal) of the \hyperlink{class_store}{Store} to be added the respective amount \\
+\hline
+{\em amount} & value of the books or journals to be added on the stock of the respective publication\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a05e802d26ede5fc4225074d1c732b3f3}\label{class_store_a05e802d26ede5fc4225074d1c732b3f3}} 
+\index{Store@{Store}!get\+\_\+publications\+\_\+store@{get\+\_\+publications\+\_\+store}}
+\index{get\+\_\+publications\+\_\+store@{get\+\_\+publications\+\_\+store}!Store@{Store}}
+\subsubsection{\texorpdfstring{get\+\_\+publications\+\_\+store()}{get\_publications\_store()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_publication}{Publication} $\ast$$>$ Store\+::get\+\_\+publications\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the vector of publications (books and journals) 
+
+\begin{DoxyReturn}{Returns}
+Respective vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a63032ec1afe4b301f55584a8018f478c}\label{class_store_a63032ec1afe4b301f55584a8018f478c}} 
+\index{Store@{Store}!get\+City@{get\+City}}
+\index{get\+City@{get\+City}!Store@{Store}}
+\subsubsection{\texorpdfstring{get\+City()}{getCity()}}
+{\footnotesize\ttfamily string Store\+::get\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the City of the \hyperlink{class_store}{Store}. 
+
+\begin{DoxyReturn}{Returns}
+Parameter(string) city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_aaaf0609bbd37babf36a4b9afb09709cf}\label{class_store_aaaf0609bbd37babf36a4b9afb09709cf}} 
+\index{Store@{Store}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Store@{Store}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int Store\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID of the \hyperlink{class_store}{Store}. 
+
+\begin{DoxyReturn}{Returns}
+Respective ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a6b828ab56ffdcf4c8eb64e53ab998543}\label{class_store_a6b828ab56ffdcf4c8eb64e53ab998543}} 
+\index{Store@{Store}!get\+I\+D\+\_\+employee@{get\+I\+D\+\_\+employee}}
+\index{get\+I\+D\+\_\+employee@{get\+I\+D\+\_\+employee}!Store@{Store}}
+\subsubsection{\texorpdfstring{get\+I\+D\+\_\+employee()}{getID\_employee()}}
+{\footnotesize\ttfamily int Store\+::get\+I\+D\+\_\+employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the \hyperlink{class_employee}{Employee} ID. 
+
+if \hyperlink{class_employee}{Employee} ID is 0, then there is no \hyperlink{class_employee}{Employee} attributed
+
+\begin{DoxyReturn}{Returns}
+Respective \hyperlink{class_employee}{Employee} ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_afbef10a37143ea91b200d50e8e6b83d7}\label{class_store_afbef10a37143ea91b200d50e8e6b83d7}} 
+\index{Store@{Store}!get\+Phone\+Number@{get\+Phone\+Number}}
+\index{get\+Phone\+Number@{get\+Phone\+Number}!Store@{Store}}
+\subsubsection{\texorpdfstring{get\+Phone\+Number()}{getPhoneNumber()}}
+{\footnotesize\ttfamily unsigned long Store\+::get\+Phone\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the phone number of the store. 
+
+\begin{DoxyReturn}{Returns}
+Respective phone number (parameter phone\+\_\+number) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_ab4b4d6e958e7d26398f3e6e0e932c920}\label{class_store_ab4b4d6e958e7d26398f3e6e0e932c920}} 
+\index{Store@{Store}!get\+Worker@{get\+Worker}}
+\index{get\+Worker@{get\+Worker}!Store@{Store}}
+\subsubsection{\texorpdfstring{get\+Worker()}{getWorker()}}
+{\footnotesize\ttfamily \hyperlink{class_employee}{Employee} Store\+::get\+Worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the \hyperlink{class_employee}{Employee} of the \hyperlink{class_store}{Store}. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_employee}{Employee} of the respective \hyperlink{class_store}{Store}, N\+U\+LL if no attributed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a4dfd27a0615f161f2f0e94297bb54969}\label{class_store_a4dfd27a0615f161f2f0e94297bb54969}} 
+\index{Store@{Store}!operator==@{operator==}}
+\index{operator==@{operator==}!Store@{Store}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Store\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{class_store}{Store} \&}]{s2 }\end{DoxyParamCaption}) const}
+
+
+
+operator == for the \hyperlink{class_store}{Store} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s2} & \hyperlink{class_store}{Store} s2 to the compared\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the Stores are equal and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a64f322bc111e0e88ab0995cd86718f0d}\label{class_store_a64f322bc111e0e88ab0995cd86718f0d}} 
+\index{Store@{Store}!remove\+Publication@{remove\+Publication}}
+\index{remove\+Publication@{remove\+Publication}!Store@{Store}}
+\subsubsection{\texorpdfstring{remove\+Publication()}{removePublication()}}
+{\footnotesize\ttfamily void Store\+::remove\+Publication (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Removes a \hyperlink{class_publication}{Publication} of the \hyperlink{class_store}{Store}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \hyperlink{class_publication}{Publication} ID that is to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a2d721f632d90947fae8c9eaa9f8abfcb}\label{class_store_a2d721f632d90947fae8c9eaa9f8abfcb}} 
+\index{Store@{Store}!set\+I\+D\+\_\+employee@{set\+I\+D\+\_\+employee}}
+\index{set\+I\+D\+\_\+employee@{set\+I\+D\+\_\+employee}!Store@{Store}}
+\subsubsection{\texorpdfstring{set\+I\+D\+\_\+employee()}{setID\_employee()}}
+{\footnotesize\ttfamily void Store\+::set\+I\+D\+\_\+employee (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{class_employee}{Employee} ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & ID to be set to the \hyperlink{class_employee}{Employee}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a5486a87318c219a4cc85438c9b171ffc}\label{class_store_a5486a87318c219a4cc85438c9b171ffc}} 
+\index{Store@{Store}!set\+Worker@{set\+Worker}}
+\index{set\+Worker@{set\+Worker}!Store@{Store}}
+\subsubsection{\texorpdfstring{set\+Worker()}{setWorker()}}
+{\footnotesize\ttfamily void Store\+::set\+Worker (\begin{DoxyParamCaption}\item[{\hyperlink{class_employee}{Employee} $\ast$}]{worker }\end{DoxyParamCaption})}
+
+
+
+Sets the worker of the \hyperlink{class_store}{Store}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \hyperlink{class_employee}{Employee} to be set to the \hyperlink{class_store}{Store}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_store_a7c3951daba9c6f0c3c432aea46cfd5b8}\label{class_store_a7c3951daba9c6f0c3c432aea46cfd5b8}} 
+\index{Store@{Store}!show@{show}}
+\index{show@{show}!Store@{Store}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Store\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the information of the \hyperlink{class_store}{Store} (his parameters) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Store.\+h\item 
+Store.\+cpp\end{DoxyCompactItemize}

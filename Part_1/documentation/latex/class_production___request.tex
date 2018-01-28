@@ -1,0 +1,164 @@
+\hypertarget{class_production___request}{}\section{Production\+\_\+\+Request Class Reference}
+\label{class_production___request}\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+
+
+Class \hyperlink{class_production___request}{Production\+\_\+\+Request} to be done by \hyperlink{class_headquarters}{Headquarters}.  
+
+
+
+
+{\ttfamily \#include $<$Production\+\_\+\+Request.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_production___request_a0c2c84b7434099e897226a93713dd050}{Production\+\_\+\+Request} (int id, int p\+\_\+id, \hyperlink{class_date}{Date} d1, \hyperlink{class_date}{Date} d2, int q)
+\begin{DoxyCompactList}\small\item\em Default constructor of the object. \end{DoxyCompactList}\item 
+void \hyperlink{class_production___request_ab08bac86aa95f28f06bf17685f7164aa}{show} ()
+\begin{DoxyCompactList}\small\item\em Displays the information of the production request (his parameters) \end{DoxyCompactList}\item 
+int \hyperlink{class_production___request_ae2448a51f3bdab909bdc53f2e5bae666}{get\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the ID of the production requests vector. \end{DoxyCompactList}\item 
+int \hyperlink{class_production___request_aafa7c4bbaae9dc72c8954a6e1eaff817}{get\+Publication\+ID} () const
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{class_publication}{Publication} ID of publication requests vector. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_production___request_aed0efd10e677d4bca14d00b5f981718a}{get\+Request\+Date} () const
+\begin{DoxyCompactList}\small\item\em Gets the request date of the publication order. \end{DoxyCompactList}\item 
+\hyperlink{class_date}{Date} \hyperlink{class_production___request_a3df39092c2aac5a34401f38a29097b3a}{get\+Deadline} () const
+\begin{DoxyCompactList}\small\item\em Gets the deadline of the publication request. \end{DoxyCompactList}\item 
+int \hyperlink{class_production___request_aac38238db2c32af73c839314c3e254a6}{get\+Quantity} () const
+\begin{DoxyCompactList}\small\item\em Gets the quantity of the publication order. \end{DoxyCompactList}\item 
+bool \hyperlink{class_production___request_a37fd21082c7c874be9587e8d3cce7174}{operator==} (\hyperlink{class_production___request}{Production\+\_\+\+Request} \&pr2) const
+\begin{DoxyCompactList}\small\item\em operator == for the \hyperlink{class_production___request}{Production\+\_\+\+Request} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_production___request}{Production\+\_\+\+Request} to be done by \hyperlink{class_headquarters}{Headquarters}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_production___request_a0c2c84b7434099e897226a93713dd050}\label{class_production___request_a0c2c84b7434099e897226a93713dd050}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{Production\+\_\+\+Request()}{Production\_Request()}}
+{\footnotesize\ttfamily Production\+\_\+\+Request\+::\+Production\+\_\+\+Request (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{p\+\_\+id,  }\item[{\hyperlink{class_date}{Date}}]{d1,  }\item[{\hyperlink{class_date}{Date}}]{d2,  }\item[{int}]{q }\end{DoxyParamCaption})}
+
+
+
+Default constructor of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & unique way to identify the production request \\
+\hline
+{\em p\+\_\+id} & id of the publication (book or journal) \\
+\hline
+{\em d1} & request date of the order \\
+\hline
+{\em d2} & deadline of the request \\
+\hline
+{\em q} & quantity of the request, publication (book or journal) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_production___request_a3df39092c2aac5a34401f38a29097b3a}\label{class_production___request_a3df39092c2aac5a34401f38a29097b3a}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!get\+Deadline@{get\+Deadline}}
+\index{get\+Deadline@{get\+Deadline}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Deadline()}{getDeadline()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Production\+\_\+\+Request\+::get\+Deadline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the deadline of the publication request. 
+
+\begin{DoxyReturn}{Returns}
+Delivery date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_production___request_ae2448a51f3bdab909bdc53f2e5bae666}\label{class_production___request_ae2448a51f3bdab909bdc53f2e5bae666}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int Production\+\_\+\+Request\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ID of the production requests vector. 
+
+\begin{DoxyReturn}{Returns}
+Respective ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_production___request_aafa7c4bbaae9dc72c8954a6e1eaff817}\label{class_production___request_aafa7c4bbaae9dc72c8954a6e1eaff817}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!get\+Publication\+ID@{get\+Publication\+ID}}
+\index{get\+Publication\+ID@{get\+Publication\+ID}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Publication\+I\+D()}{getPublicationID()}}
+{\footnotesize\ttfamily int Production\+\_\+\+Request\+::get\+Publication\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the \hyperlink{class_publication}{Publication} ID of publication requests vector. 
+
+\begin{DoxyReturn}{Returns}
+Respective publication ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_production___request_aac38238db2c32af73c839314c3e254a6}\label{class_production___request_aac38238db2c32af73c839314c3e254a6}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!get\+Quantity@{get\+Quantity}}
+\index{get\+Quantity@{get\+Quantity}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Quantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Production\+\_\+\+Request\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the quantity of the publication order. 
+
+\begin{DoxyReturn}{Returns}
+Respective quantity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_production___request_aed0efd10e677d4bca14d00b5f981718a}\label{class_production___request_aed0efd10e677d4bca14d00b5f981718a}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!get\+Request\+Date@{get\+Request\+Date}}
+\index{get\+Request\+Date@{get\+Request\+Date}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{get\+Request\+Date()}{getRequestDate()}}
+{\footnotesize\ttfamily \hyperlink{class_date}{Date} Production\+\_\+\+Request\+::get\+Request\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the request date of the publication order. 
+
+\begin{DoxyReturn}{Returns}
+Request date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_production___request_a37fd21082c7c874be9587e8d3cce7174}\label{class_production___request_a37fd21082c7c874be9587e8d3cce7174}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!operator==@{operator==}}
+\index{operator==@{operator==}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Production\+\_\+\+Request\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{class_production___request}{Production\+\_\+\+Request} \&}]{pr2 }\end{DoxyParamCaption}) const}
+
+
+
+operator == for the \hyperlink{class_production___request}{Production\+\_\+\+Request} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pr2} & \hyperlink{class_production___request}{Production\+\_\+\+Request} pr2 to the compared\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the Production\+\_\+\+Requests are equal and false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_production___request_ab08bac86aa95f28f06bf17685f7164aa}\label{class_production___request_ab08bac86aa95f28f06bf17685f7164aa}} 
+\index{Production\+\_\+\+Request@{Production\+\_\+\+Request}!show@{show}}
+\index{show@{show}!Production\+\_\+\+Request@{Production\+\_\+\+Request}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Production\+\_\+\+Request\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the information of the production request (his parameters) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Production\+\_\+\+Request.\+h\item 
+Production\+\_\+\+Request.\+cpp\end{DoxyCompactItemize}

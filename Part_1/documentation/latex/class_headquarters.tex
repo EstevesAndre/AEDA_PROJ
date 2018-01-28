@@ -1,0 +1,482 @@
+\hypertarget{class_headquarters}{}\section{Headquarters Class Reference}
+\label{class_headquarters}\index{Headquarters@{Headquarters}}
+
+
+Class \hyperlink{class_headquarters}{Headquarters} the main class that contains everything (support where the company works)  
+
+
+
+
+{\ttfamily \#include $<$Headquarters.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_headquarters_a47ada4046d4b5feaadc63d64439420ab}\label{class_headquarters_a47ada4046d4b5feaadc63d64439420ab}} 
+\hyperlink{class_headquarters_a47ada4046d4b5feaadc63d64439420ab}{Headquarters} ()
+\begin{DoxyCompactList}\small\item\em Default construction. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a55cc9c6aa484bb13d2612baa90098183}{start\+\_\+files} ()
+\begin{DoxyCompactList}\small\item\em Reads the information from the files and put this on the respective vectors (publications, employees, stores, store\+\_\+requests, production\+\_\+requests, hq\+\_\+stock) \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_aabdb893a0704f29221d48d6f1bb61bd6}{show\+Publications} () const
+\begin{DoxyCompactList}\small\item\em Displays the publications of the \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a3dacd649a7dce9de39328bf45fdd79d8}{show\+Employees} () const
+\begin{DoxyCompactList}\small\item\em Displays the employees of the \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a5bd547ce60d0ebf56fa578686f88d207}{show\+Stores} () const
+\begin{DoxyCompactList}\small\item\em Displays the stores of the \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a57d34b620b22f134ffc64be46b830424}{show\+Store\+Requests} () const
+\begin{DoxyCompactList}\small\item\em Displays the store\+\_\+requests of the \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_af1bdf66c16fe6b211fffe03a81a69ec2}{show\+Production\+Requests} () const
+\begin{DoxyCompactList}\small\item\em Displays the production\+\_\+requests of the \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_ad232157623c9d2ada742982f08a82be8}{add\+Publication} ()
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{class_publication}{Publication} to \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_ac99ce9ba98b3bdddef13fedd5d2528f0}{add\+Employee} ()
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{class_employee}{Employee} to \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_ab0fa0fad9679f2f99811257d5a49f4c0}{add\+Store} ()
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{class_store}{Store} to \hyperlink{class_headquarters}{Headquarters}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_ae1b2bc854e26b7334169c0bece506646}{set\+\_\+publication\+\_\+to\+\_\+store} ()
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_publication}{Publication} to the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_headquarters_a33d7a21771cada0e0af7135c36f6a19d}{verifica\+\_\+set\+\_\+publications} (int store\+\_\+id, int store\+\_\+request\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_publication}{Publication} to the store. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a260cfd15b81cd073a2b597ac892a2142}{add\+Store\+Request} ()
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{class_store___request}{Store\+\_\+\+Request}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_acc151cbc13eaee84fdd6ac8d2bdf83bb}{add\+Production\+Request} ()
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{class_production___request}{Production\+\_\+\+Request}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a53dc212f35caf7e89661c0dfa000858f}{delete\+Publication} ()
+\begin{DoxyCompactList}\small\item\em Deletes \hyperlink{class_publication}{Publication}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_acf608a712eb8c756149f21ab1d6b38f5}{delete\+Employee} ()
+\begin{DoxyCompactList}\small\item\em Deletes \hyperlink{class_publication}{Publication}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a39ceab5aab4576d7d082dd6e3c3cb2b5}{delete\+Store} ()
+\begin{DoxyCompactList}\small\item\em Deletes \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a23aa276f89e9841bede6780c4bff341e}{delete\+Store\+Request} ()
+\begin{DoxyCompactList}\small\item\em Deletes \hyperlink{class_store___request}{Store\+\_\+\+Request}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a943b8cc7b3c1c8c8a126065897512b91}{delete\+Production\+Request} ()
+\begin{DoxyCompactList}\small\item\em Deletes \hyperlink{class_production___request}{Production\+\_\+\+Request}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_ad162fb3833c24833a0ac83b50f3df91b}{attribute\+Store} ()
+\begin{DoxyCompactList}\small\item\em Attributes a \hyperlink{class_store}{Store} to a \hyperlink{class_employee}{Employee}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a41ad767a1dac88d048c8584a81fbabf2}{satisfy\+Store\+Requests} (bool priority)
+\begin{DoxyCompactList}\small\item\em Satisfy the \hyperlink{class_store}{Store}. \end{DoxyCompactList}\item 
+void \hyperlink{class_headquarters_a92e2ecf8f496e2681a71a13b91d0da7d}{produce} (bool priority)
+\begin{DoxyCompactList}\small\item\em The last element of the Store\+\_\+\+Requests vector, that\textquotesingle{}s mean the first request, is done. \end{DoxyCompactList}\item 
+int \hyperlink{class_headquarters_a6951a0254016c43b0d54bd17195d711d}{count\+\_\+types} (int ind) const
+\begin{DoxyCompactList}\small\item\em Count the types of publications in a vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_publication}{Publication} $\ast$ $>$ \hyperlink{class_headquarters_a71a68cac0db5c9aa33b548f4b696b9bc}{get\+Publications} () const
+\begin{DoxyCompactList}\small\item\em Gets the Publications (\hyperlink{class_book}{Book} and \hyperlink{class_journal}{Journal}) \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_employee}{Employee} $\ast$ $>$ \hyperlink{class_headquarters_a0d5357a865f5ccdf194404b97f04816a}{get\+Employees} () const
+\begin{DoxyCompactList}\small\item\em Gets the Employees. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_store}{Store} $\ast$ $>$ \hyperlink{class_headquarters_a37aa3d25dcd693e6537a0bdd361942d8}{get\+Stores} () const
+\begin{DoxyCompactList}\small\item\em Gets the Stores. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_store___request}{Store\+\_\+\+Request} $\ast$ $>$ \hyperlink{class_headquarters_a68177abe09961053fe98aa3bcdfb6fdd}{get\+Store\+\_\+requests} () const
+\begin{DoxyCompactList}\small\item\em Gets the Store\+\_\+requests. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_production___request}{Production\+\_\+\+Request} $\ast$ $>$ \hyperlink{class_headquarters_a54e99ea57123ca6a53e640a2c95726cc}{get\+Production\+\_\+requests} () const
+\begin{DoxyCompactList}\small\item\em Gets the Production\+\_\+requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_headquarters}{Headquarters} the main class that contains everything (support where the company works) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_headquarters_ac99ce9ba98b3bdddef13fedd5d2528f0}\label{class_headquarters_ac99ce9ba98b3bdddef13fedd5d2528f0}} 
+\index{Headquarters@{Headquarters}!add\+Employee@{add\+Employee}}
+\index{add\+Employee@{add\+Employee}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{add\+Employee()}{addEmployee()}}
+{\footnotesize\ttfamily void Headquarters\+::add\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add \hyperlink{class_employee}{Employee} to \hyperlink{class_headquarters}{Headquarters}. 
+
+The user is the one who needs to give all the parameters for create a new \hyperlink{class_employee}{Employee}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_acc151cbc13eaee84fdd6ac8d2bdf83bb}\label{class_headquarters_acc151cbc13eaee84fdd6ac8d2bdf83bb}} 
+\index{Headquarters@{Headquarters}!add\+Production\+Request@{add\+Production\+Request}}
+\index{add\+Production\+Request@{add\+Production\+Request}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{add\+Production\+Request()}{addProductionRequest()}}
+{\footnotesize\ttfamily void Headquarters\+::add\+Production\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add \hyperlink{class_production___request}{Production\+\_\+\+Request}. 
+
+the user is the one who needs to give all the parameters for create a new Production\+Request
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_ad232157623c9d2ada742982f08a82be8}\label{class_headquarters_ad232157623c9d2ada742982f08a82be8}} 
+\index{Headquarters@{Headquarters}!add\+Publication@{add\+Publication}}
+\index{add\+Publication@{add\+Publication}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{add\+Publication()}{addPublication()}}
+{\footnotesize\ttfamily void Headquarters\+::add\+Publication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add \hyperlink{class_publication}{Publication} to \hyperlink{class_headquarters}{Headquarters}. 
+
+The user is the one who needs to give all the parameters for create a new \hyperlink{class_publication}{Publication}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_ab0fa0fad9679f2f99811257d5a49f4c0}\label{class_headquarters_ab0fa0fad9679f2f99811257d5a49f4c0}} 
+\index{Headquarters@{Headquarters}!add\+Store@{add\+Store}}
+\index{add\+Store@{add\+Store}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{add\+Store()}{addStore()}}
+{\footnotesize\ttfamily void Headquarters\+::add\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add \hyperlink{class_store}{Store} to \hyperlink{class_headquarters}{Headquarters}. 
+
+The user is the one who needs to give all the parameters for create a new \hyperlink{class_store}{Store}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a260cfd15b81cd073a2b597ac892a2142}\label{class_headquarters_a260cfd15b81cd073a2b597ac892a2142}} 
+\index{Headquarters@{Headquarters}!add\+Store\+Request@{add\+Store\+Request}}
+\index{add\+Store\+Request@{add\+Store\+Request}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{add\+Store\+Request()}{addStoreRequest()}}
+{\footnotesize\ttfamily void Headquarters\+::add\+Store\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add \hyperlink{class_store___request}{Store\+\_\+\+Request}. 
+
+the user is the one who needs to give all the parameters for create a new Store\+Request
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_ad162fb3833c24833a0ac83b50f3df91b}\label{class_headquarters_ad162fb3833c24833a0ac83b50f3df91b}} 
+\index{Headquarters@{Headquarters}!attribute\+Store@{attribute\+Store}}
+\index{attribute\+Store@{attribute\+Store}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{attribute\+Store()}{attributeStore()}}
+{\footnotesize\ttfamily void Headquarters\+::attribute\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Attributes a \hyperlink{class_store}{Store} to a \hyperlink{class_employee}{Employee}. 
+
+the user is the one who need to give the \hyperlink{class_store}{Store} ID and the \hyperlink{class_employee}{Employee} ID to attribute the \hyperlink{class_store}{Store}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a6951a0254016c43b0d54bd17195d711d}\label{class_headquarters_a6951a0254016c43b0d54bd17195d711d}} 
+\index{Headquarters@{Headquarters}!count\+\_\+types@{count\+\_\+types}}
+\index{count\+\_\+types@{count\+\_\+types}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{count\+\_\+types()}{count\_types()}}
+{\footnotesize\ttfamily int Headquarters\+::count\+\_\+types (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption}) const}
+
+
+
+Count the types of publications in a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & indice of the publication type, 0 if \hyperlink{class_book}{Book} and 1 if \hyperlink{class_journal}{Journal}\\
+\hline
+\end{DoxyParams}
+return Count of the publications of that type \mbox{\Hypertarget{class_headquarters_acf608a712eb8c756149f21ab1d6b38f5}\label{class_headquarters_acf608a712eb8c756149f21ab1d6b38f5}} 
+\index{Headquarters@{Headquarters}!delete\+Employee@{delete\+Employee}}
+\index{delete\+Employee@{delete\+Employee}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{delete\+Employee()}{deleteEmployee()}}
+{\footnotesize\ttfamily void Headquarters\+::delete\+Employee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes \hyperlink{class_publication}{Publication}. 
+
+the user is the one who needs to give the \hyperlink{class_publication}{Publication} ID that is gonna be deleted
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a943b8cc7b3c1c8c8a126065897512b91}\label{class_headquarters_a943b8cc7b3c1c8c8a126065897512b91}} 
+\index{Headquarters@{Headquarters}!delete\+Production\+Request@{delete\+Production\+Request}}
+\index{delete\+Production\+Request@{delete\+Production\+Request}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{delete\+Production\+Request()}{deleteProductionRequest()}}
+{\footnotesize\ttfamily void Headquarters\+::delete\+Production\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes \hyperlink{class_production___request}{Production\+\_\+\+Request}. 
+
+the user is the one who needs to give the Production\+Request ID that is gonna be deleted
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a53dc212f35caf7e89661c0dfa000858f}\label{class_headquarters_a53dc212f35caf7e89661c0dfa000858f}} 
+\index{Headquarters@{Headquarters}!delete\+Publication@{delete\+Publication}}
+\index{delete\+Publication@{delete\+Publication}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{delete\+Publication()}{deletePublication()}}
+{\footnotesize\ttfamily void Headquarters\+::delete\+Publication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes \hyperlink{class_publication}{Publication}. 
+
+the user is the one who needs to give the publication id that is gonna be deleted
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a39ceab5aab4576d7d082dd6e3c3cb2b5}\label{class_headquarters_a39ceab5aab4576d7d082dd6e3c3cb2b5}} 
+\index{Headquarters@{Headquarters}!delete\+Store@{delete\+Store}}
+\index{delete\+Store@{delete\+Store}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{delete\+Store()}{deleteStore()}}
+{\footnotesize\ttfamily void Headquarters\+::delete\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes \hyperlink{class_store}{Store}. 
+
+the user is the one who needs to give the \hyperlink{class_store}{Store} ID that is gonna be deleted
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a23aa276f89e9841bede6780c4bff341e}\label{class_headquarters_a23aa276f89e9841bede6780c4bff341e}} 
+\index{Headquarters@{Headquarters}!delete\+Store\+Request@{delete\+Store\+Request}}
+\index{delete\+Store\+Request@{delete\+Store\+Request}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{delete\+Store\+Request()}{deleteStoreRequest()}}
+{\footnotesize\ttfamily void Headquarters\+::delete\+Store\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes \hyperlink{class_store___request}{Store\+\_\+\+Request}. 
+
+the user is the one who needs to give the Store\+Request ID that is gonna be deleted
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a0d5357a865f5ccdf194404b97f04816a}\label{class_headquarters_a0d5357a865f5ccdf194404b97f04816a}} 
+\index{Headquarters@{Headquarters}!get\+Employees@{get\+Employees}}
+\index{get\+Employees@{get\+Employees}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{get\+Employees()}{getEmployees()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_employee}{Employee} $\ast$ $>$ Headquarters\+::get\+Employees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the Employees. 
+
+\begin{DoxyReturn}{Returns}
+Vector of Employee$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a54e99ea57123ca6a53e640a2c95726cc}\label{class_headquarters_a54e99ea57123ca6a53e640a2c95726cc}} 
+\index{Headquarters@{Headquarters}!get\+Production\+\_\+requests@{get\+Production\+\_\+requests}}
+\index{get\+Production\+\_\+requests@{get\+Production\+\_\+requests}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{get\+Production\+\_\+requests()}{getProduction\_requests()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_production___request}{Production\+\_\+\+Request} $\ast$ $>$ Headquarters\+::get\+Production\+\_\+requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the Production\+\_\+requests. 
+
+\begin{DoxyReturn}{Returns}
+Vector of \hyperlink{class_production___request}{Production\+\_\+\+Request} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a71a68cac0db5c9aa33b548f4b696b9bc}\label{class_headquarters_a71a68cac0db5c9aa33b548f4b696b9bc}} 
+\index{Headquarters@{Headquarters}!get\+Publications@{get\+Publications}}
+\index{get\+Publications@{get\+Publications}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{get\+Publications()}{getPublications()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_publication}{Publication} $\ast$ $>$ Headquarters\+::get\+Publications (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the Publications (\hyperlink{class_book}{Book} and \hyperlink{class_journal}{Journal}) 
+
+\begin{DoxyReturn}{Returns}
+Vector of Publication$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a68177abe09961053fe98aa3bcdfb6fdd}\label{class_headquarters_a68177abe09961053fe98aa3bcdfb6fdd}} 
+\index{Headquarters@{Headquarters}!get\+Store\+\_\+requests@{get\+Store\+\_\+requests}}
+\index{get\+Store\+\_\+requests@{get\+Store\+\_\+requests}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{get\+Store\+\_\+requests()}{getStore\_requests()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_store___request}{Store\+\_\+\+Request} $\ast$ $>$ Headquarters\+::get\+Store\+\_\+requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the Store\+\_\+requests. 
+
+\begin{DoxyReturn}{Returns}
+Vector of \hyperlink{class_store___request}{Store\+\_\+\+Request} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a37aa3d25dcd693e6537a0bdd361942d8}\label{class_headquarters_a37aa3d25dcd693e6537a0bdd361942d8}} 
+\index{Headquarters@{Headquarters}!get\+Stores@{get\+Stores}}
+\index{get\+Stores@{get\+Stores}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{get\+Stores()}{getStores()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{class_store}{Store} $\ast$ $>$ Headquarters\+::get\+Stores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the Stores. 
+
+\begin{DoxyReturn}{Returns}
+Vector of Store$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a92e2ecf8f496e2681a71a13b91d0da7d}\label{class_headquarters_a92e2ecf8f496e2681a71a13b91d0da7d}} 
+\index{Headquarters@{Headquarters}!produce@{produce}}
+\index{produce@{produce}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{produce()}{produce()}}
+{\footnotesize\ttfamily void Headquarters\+::produce (\begin{DoxyParamCaption}\item[{bool}]{priority }\end{DoxyParamCaption})}
+
+
+
+The last element of the Store\+\_\+\+Requests vector, that\textquotesingle{}s mean the first request, is done. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em priority} & If true sorts Store\+\_\+\+Requests by \char`\"{}first request made\char`\"{} If false sorts Store\+\_\+\+Requests by \char`\"{}nearest deadline\char`\"{}\\
+\hline
+\end{DoxyParams}
+Updates hq\+\_\+stock of that \hyperlink{class_publication}{Publication} Resizes the vector at the end
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a41ad767a1dac88d048c8584a81fbabf2}\label{class_headquarters_a41ad767a1dac88d048c8584a81fbabf2}} 
+\index{Headquarters@{Headquarters}!satisfy\+Store\+Requests@{satisfy\+Store\+Requests}}
+\index{satisfy\+Store\+Requests@{satisfy\+Store\+Requests}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{satisfy\+Store\+Requests()}{satisfyStoreRequests()}}
+{\footnotesize\ttfamily void Headquarters\+::satisfy\+Store\+Requests (\begin{DoxyParamCaption}\item[{bool}]{priority }\end{DoxyParamCaption})}
+
+
+
+Satisfy the \hyperlink{class_store}{Store}. 
+
+The last element of the Store\+\_\+\+Requests vector, that\textquotesingle{}s mean the first request, is done
+
+
+\begin{DoxyParams}{Parameters}
+{\em priority} & If true sorts Store\+\_\+\+Requests by \char`\"{}first request made\char`\"{} If false sorts Store\+\_\+\+Requests by \char`\"{}nearest deadline\char`\"{}\\
+\hline
+\end{DoxyParams}
+Resizes the vector at the end
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_ae1b2bc854e26b7334169c0bece506646}\label{class_headquarters_ae1b2bc854e26b7334169c0bece506646}} 
+\index{Headquarters@{Headquarters}!set\+\_\+publication\+\_\+to\+\_\+store@{set\+\_\+publication\+\_\+to\+\_\+store}}
+\index{set\+\_\+publication\+\_\+to\+\_\+store@{set\+\_\+publication\+\_\+to\+\_\+store}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{set\+\_\+publication\+\_\+to\+\_\+store()}{set\_publication\_to\_store()}}
+{\footnotesize\ttfamily void Headquarters\+::set\+\_\+publication\+\_\+to\+\_\+store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{class_publication}{Publication} to the \hyperlink{class_store}{Store}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a3dacd649a7dce9de39328bf45fdd79d8}\label{class_headquarters_a3dacd649a7dce9de39328bf45fdd79d8}} 
+\index{Headquarters@{Headquarters}!show\+Employees@{show\+Employees}}
+\index{show\+Employees@{show\+Employees}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{show\+Employees()}{showEmployees()}}
+{\footnotesize\ttfamily void Headquarters\+::show\+Employees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays the employees of the \hyperlink{class_headquarters}{Headquarters}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_af1bdf66c16fe6b211fffe03a81a69ec2}\label{class_headquarters_af1bdf66c16fe6b211fffe03a81a69ec2}} 
+\index{Headquarters@{Headquarters}!show\+Production\+Requests@{show\+Production\+Requests}}
+\index{show\+Production\+Requests@{show\+Production\+Requests}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{show\+Production\+Requests()}{showProductionRequests()}}
+{\footnotesize\ttfamily void Headquarters\+::show\+Production\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays the production\+\_\+requests of the \hyperlink{class_headquarters}{Headquarters}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_aabdb893a0704f29221d48d6f1bb61bd6}\label{class_headquarters_aabdb893a0704f29221d48d6f1bb61bd6}} 
+\index{Headquarters@{Headquarters}!show\+Publications@{show\+Publications}}
+\index{show\+Publications@{show\+Publications}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{show\+Publications()}{showPublications()}}
+{\footnotesize\ttfamily void Headquarters\+::show\+Publications (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays the publications of the \hyperlink{class_headquarters}{Headquarters}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a57d34b620b22f134ffc64be46b830424}\label{class_headquarters_a57d34b620b22f134ffc64be46b830424}} 
+\index{Headquarters@{Headquarters}!show\+Store\+Requests@{show\+Store\+Requests}}
+\index{show\+Store\+Requests@{show\+Store\+Requests}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{show\+Store\+Requests()}{showStoreRequests()}}
+{\footnotesize\ttfamily void Headquarters\+::show\+Store\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays the store\+\_\+requests of the \hyperlink{class_headquarters}{Headquarters}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a5bd547ce60d0ebf56fa578686f88d207}\label{class_headquarters_a5bd547ce60d0ebf56fa578686f88d207}} 
+\index{Headquarters@{Headquarters}!show\+Stores@{show\+Stores}}
+\index{show\+Stores@{show\+Stores}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{show\+Stores()}{showStores()}}
+{\footnotesize\ttfamily void Headquarters\+::show\+Stores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays the stores of the \hyperlink{class_headquarters}{Headquarters}. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a55cc9c6aa484bb13d2612baa90098183}\label{class_headquarters_a55cc9c6aa484bb13d2612baa90098183}} 
+\index{Headquarters@{Headquarters}!start\+\_\+files@{start\+\_\+files}}
+\index{start\+\_\+files@{start\+\_\+files}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{start\+\_\+files()}{start\_files()}}
+{\footnotesize\ttfamily void Headquarters\+::start\+\_\+files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the information from the files and put this on the respective vectors (publications, employees, stores, store\+\_\+requests, production\+\_\+requests, hq\+\_\+stock) 
+
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_headquarters_a33d7a21771cada0e0af7135c36f6a19d}\label{class_headquarters_a33d7a21771cada0e0af7135c36f6a19d}} 
+\index{Headquarters@{Headquarters}!verifica\+\_\+set\+\_\+publications@{verifica\+\_\+set\+\_\+publications}}
+\index{verifica\+\_\+set\+\_\+publications@{verifica\+\_\+set\+\_\+publications}!Headquarters@{Headquarters}}
+\subsubsection{\texorpdfstring{verifica\+\_\+set\+\_\+publications()}{verifica\_set\_publications()}}
+{\footnotesize\ttfamily bool Headquarters\+::verifica\+\_\+set\+\_\+publications (\begin{DoxyParamCaption}\item[{int}]{store\+\_\+id,  }\item[{int}]{store\+\_\+request\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Sets the \hyperlink{class_publication}{Publication} to the store. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em store\+\_\+id} & is the store where will be added the publication( book or journal) \\
+\hline
+{\em store\+\_\+request\+\_\+id} & is the identification of the request to know which publication will be added to the vector publications of the store\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if can add publication to store and false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Headquarters.\+h\item 
+Headquarters.\+cpp\item 
+Main.\+cpp\end{DoxyCompactItemize}
