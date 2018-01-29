@@ -1,6 +1,8 @@
-# AEDA_PROJ
-AEDA - Data structures and algorithms  
+# FEUP - MIEIC
+# AEDA1718
 
-Project C++
+AEDA - Data structures and algorithms  2º Year 1º Semester
+
+# Project C++
 Theme 9 
 Publications of the National Press - Mint
